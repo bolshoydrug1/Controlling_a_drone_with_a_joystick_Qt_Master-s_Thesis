@@ -1,0 +1,1 @@
+# Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis
