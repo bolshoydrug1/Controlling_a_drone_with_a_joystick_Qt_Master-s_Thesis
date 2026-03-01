@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/konstantin1/Magister_work/Magister_work
+CMAKE_SOURCE_DIR = /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/konstantin1/Magister_work/Magister_work/build/Desktop-Debug
+CMAKE_BINARY_DIR = /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantin1/Magister_work/Magister_work/build/Desktop-Debug/CMakeFiles /home/konstantin1/Magister_work/Magister_work/build/Desktop-Debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/CMakeFiles /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantin1/Magister_work/Magister_work/build/Desktop-Debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -200,6 +200,45 @@ Magister_work_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Magister_work_autogen.dir/build.make CMakeFiles/Magister_work_autogen.dir/build
 .PHONY : Magister_work_autogen/fast
 
+#=============================================================================
+# Target rules for targets named joystick_CTRL
+
+# Build rule for target.
+joystick_CTRL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joystick_CTRL
+.PHONY : joystick_CTRL
+
+# fast build rule for target.
+joystick_CTRL/fast:
+	$(MAKE) $(MAKESILENT) -f joystick_CTRL/CMakeFiles/joystick_CTRL.dir/build.make joystick_CTRL/CMakeFiles/joystick_CTRL.dir/build
+.PHONY : joystick_CTRL/fast
+
+#=============================================================================
+# Target rules for targets named joystick_CTRL_autogen_timestamp_deps
+
+# Build rule for target.
+joystick_CTRL_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joystick_CTRL_autogen_timestamp_deps
+.PHONY : joystick_CTRL_autogen_timestamp_deps
+
+# fast build rule for target.
+joystick_CTRL_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f joystick_CTRL/CMakeFiles/joystick_CTRL_autogen_timestamp_deps.dir/build.make joystick_CTRL/CMakeFiles/joystick_CTRL_autogen_timestamp_deps.dir/build
+.PHONY : joystick_CTRL_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named joystick_CTRL_autogen
+
+# Build rule for target.
+joystick_CTRL_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 joystick_CTRL_autogen
+.PHONY : joystick_CTRL_autogen
+
+# fast build rule for target.
+joystick_CTRL_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f joystick_CTRL/CMakeFiles/joystick_CTRL_autogen.dir/build.make joystick_CTRL/CMakeFiles/joystick_CTRL_autogen.dir/build
+.PHONY : joystick_CTRL_autogen/fast
+
 Magister_work_autogen/mocs_compilation.o: Magister_work_autogen/mocs_compilation.cpp.o
 .PHONY : Magister_work_autogen/mocs_compilation.o
 
@@ -223,30 +262,6 @@ Magister_work_autogen/mocs_compilation.s: Magister_work_autogen/mocs_compilation
 Magister_work_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Magister_work.dir/build.make CMakeFiles/Magister_work.dir/Magister_work_autogen/mocs_compilation.cpp.s
 .PHONY : Magister_work_autogen/mocs_compilation.cpp.s
-
-joystickcontroller.o: joystickcontroller.cpp.o
-.PHONY : joystickcontroller.o
-
-# target to build an object file
-joystickcontroller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Magister_work.dir/build.make CMakeFiles/Magister_work.dir/joystickcontroller.cpp.o
-.PHONY : joystickcontroller.cpp.o
-
-joystickcontroller.i: joystickcontroller.cpp.i
-.PHONY : joystickcontroller.i
-
-# target to preprocess a source file
-joystickcontroller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Magister_work.dir/build.make CMakeFiles/Magister_work.dir/joystickcontroller.cpp.i
-.PHONY : joystickcontroller.cpp.i
-
-joystickcontroller.s: joystickcontroller.cpp.s
-.PHONY : joystickcontroller.s
-
-# target to generate assembly for a file
-joystickcontroller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Magister_work.dir/build.make CMakeFiles/Magister_work.dir/joystickcontroller.cpp.s
-.PHONY : joystickcontroller.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -310,13 +325,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Magister_work_autogen"
 	@echo "... Magister_work_autogen_timestamp_deps"
+	@echo "... joystick_CTRL_autogen"
+	@echo "... joystick_CTRL_autogen_timestamp_deps"
 	@echo "... Magister_work"
+	@echo "... joystick_CTRL"
 	@echo "... Magister_work_autogen/mocs_compilation.o"
 	@echo "... Magister_work_autogen/mocs_compilation.i"
 	@echo "... Magister_work_autogen/mocs_compilation.s"
-	@echo "... joystickcontroller.o"
-	@echo "... joystickcontroller.i"
-	@echo "... joystickcontroller.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

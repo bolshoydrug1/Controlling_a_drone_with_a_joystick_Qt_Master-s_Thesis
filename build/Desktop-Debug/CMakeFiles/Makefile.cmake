@@ -7,10 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/konstantin1/Magister_work/Magister_work/CMakeLists.txt"
+  "/home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/CMakeLists.txt"
   ".qtc/package-manager/auto-setup.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
+  "/home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake"
@@ -159,6 +160,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/Magister_work_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "joystick_CTRL/CMakeFiles/joystick_CTRL_autogen.dir/AutogenInfo.json"
+  "joystick_CTRL/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -166,4 +169,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Magister_work.dir/DependInfo.cmake"
   "CMakeFiles/Magister_work_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/Magister_work_autogen.dir/DependInfo.cmake"
+  "joystick_CTRL/CMakeFiles/joystick_CTRL.dir/DependInfo.cmake"
+  "joystick_CTRL/CMakeFiles/joystick_CTRL_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "joystick_CTRL/CMakeFiles/joystick_CTRL_autogen.dir/DependInfo.cmake"
   )
