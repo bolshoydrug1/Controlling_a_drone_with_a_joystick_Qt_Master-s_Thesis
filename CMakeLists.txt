@@ -16,9 +16,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Network)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(SDL2 REQUIRED sdl2)
 
-# 🔍 Поиск SDL2 через pkg-config
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(SDL2 REQUIRED sdl2)
+add_subdirectory(joystick_CTRL)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -31,7 +29,6 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Magister_work
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        joystickcontroller.h joystickcontroller.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Magister_work APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -47,8 +44,8 @@ else()
     else()
         add_executable(Magister_work
             ${PROJECT_SOURCES}
-            joystickcontroller.h
-            joystickcontroller.cpp
+
+
         )
     endif()
 endif()
@@ -59,6 +56,7 @@ target_link_libraries(Magister_work PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::Network
     ${SDL2_LIBRARIES}
+    joystick_CTRL
 )
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an

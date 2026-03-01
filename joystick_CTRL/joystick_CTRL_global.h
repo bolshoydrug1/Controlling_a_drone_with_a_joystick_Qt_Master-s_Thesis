@@ -1,0 +1,12 @@
+#ifndef JOYSTICK_CTRL_GLOBAL_H
+#define JOYSTICK_CTRL_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(JOYSTICK_CTRL_LIBRARY)
+#define JOYSTICK_CTRL_EXPORT Q_DECL_EXPORT
+#else
+#define JOYSTICK_CTRL_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // JOYSTICK_CTRL_GLOBAL_H

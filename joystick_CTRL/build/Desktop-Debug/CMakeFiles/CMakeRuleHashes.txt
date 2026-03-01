@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+0c73d794313fa7cc722826b1e96e520d CMakeFiles/joystick_CTRL_autogen
+0c73d794313fa7cc722826b1e96e520d CMakeFiles/joystick_CTRL_autogen_timestamp_deps
+89f2f590157d1dd50141a83daf427b20 joystick_CTRL_autogen/timestamp

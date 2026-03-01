@@ -1,5 +1,5 @@
-#ifndef JOYSTICKCONTROLLER_H
-#define JOYSTICKCONTROLLER_H
+#ifndef JOYSTICK_CTRL_H
+#define JOYSTICK_CTRL_H
 
 #include <QObject>
 #include <QTimer>
@@ -7,7 +7,7 @@
 #include <vector>
 
 // Предварительные объявления SDL2 (чтобы не тянуть весь заголовок в .h)
-    struct _SDL_Joystick;
+struct _SDL_Joystick;
 typedef struct _SDL_Joystick SDL_Joystick;
 
 /**
@@ -74,4 +74,4 @@ private:
     void updateState();
 };
 
-#endif // JOYSTICKCONTROLLER_H
+#endif // JOYSTICK_CTRL_H

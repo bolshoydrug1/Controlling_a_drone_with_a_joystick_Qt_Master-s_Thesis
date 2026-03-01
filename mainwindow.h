@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "joystickcontroller.h"
+#include "joystick_CTRL/joystick_ctrl.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

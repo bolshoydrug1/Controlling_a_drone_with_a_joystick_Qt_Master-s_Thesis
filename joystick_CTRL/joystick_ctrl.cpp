@@ -1,4 +1,4 @@
-#include "joystickcontroller.h"
+#include "joystick_ctrl.h"
 #include <SDL2/SDL.h>
 #include <QDebug>
 #include <QDateTime>

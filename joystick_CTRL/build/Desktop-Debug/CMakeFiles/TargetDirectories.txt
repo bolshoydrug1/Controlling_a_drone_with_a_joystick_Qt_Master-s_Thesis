@@ -1,0 +1,5 @@
+/home/konstantin1/CLionProjects/Drone_CTRL/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL/build/Desktop-Debug/CMakeFiles/joystick_CTRL.dir
+/home/konstantin1/CLionProjects/Drone_CTRL/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/konstantin1/CLionProjects/Drone_CTRL/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/konstantin1/CLionProjects/Drone_CTRL/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL/build/Desktop-Debug/CMakeFiles/joystick_CTRL_autogen_timestamp_deps.dir
+/home/konstantin1/CLionProjects/Drone_CTRL/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL/build/Desktop-Debug/CMakeFiles/joystick_CTRL_autogen.dir
