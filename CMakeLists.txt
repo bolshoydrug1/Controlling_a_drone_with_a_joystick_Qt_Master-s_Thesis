@@ -47,6 +47,8 @@ else()
     else()
         add_executable(Magister_work
             ${PROJECT_SOURCES}
+            joystickcontroller.h
+            joystickcontroller.cpp
         )
     endif()
 endif()
@@ -54,8 +56,8 @@ endif()
 
 # 🔗 Линковка библиотек
 target_link_libraries(Magister_work PRIVATE
-    Qt6::Widgets
-    Qt6::Network
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Network
     ${SDL2_LIBRARIES}
 )
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
