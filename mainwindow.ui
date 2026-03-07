@@ -17,107 +17,50 @@
    <widget class="QTextBrowser" name="txt_status_bar">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>250</y>
-      <width>691</width>
-      <height>71</height>
+      <x>9</x>
+      <y>340</y>
+      <width>491</width>
+      <height>111</height>
      </rect>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QGroupBox" name="MPU_gBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>385</width>
-      <height>203</height>
+      <x>9</x>
+      <y>9</y>
+      <width>257</width>
+      <height>119</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_7">
-     <property name="sizeConstraint">
-      <enum>QLayout::SetMinimumSize</enum>
+    <property name="title">
+     <string>Gyro_Accel</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>33</y>
+       <width>138</width>
+       <height>156</height>
+      </rect>
      </property>
-     <item>
-      <widget class="QGroupBox" name="MPU_gBox">
-       <property name="title">
-        <string>Gyro_Accel</string>
-       </property>
-       <layout class="QGridLayout" name="gridLayout" rowstretch="0" columnstretch="0" rowminimumheight="0">
-        <item row="0" column="0">
-         <layout class="QVBoxLayout" name="verticalLayout_3">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
           <item>
-           <layout class="QVBoxLayout" name="verticalLayout_2">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
-             <layout class="QVBoxLayout" name="verticalLayout">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_3">
-                <item>
-                 <widget class="QLabel" name="label_5">
-                  <property name="text">
-                   <string>Gyro x = </string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="gyro_x_txt">
-                  <property name="text">
-                   <string>TextLabel</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout">
-                <item>
-                 <widget class="QLabel" name="label">
-                  <property name="text">
-                   <string>Gyro y = </string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="gyro_y_txt">
-                  <property name="text">
-                   <string>TextLabel</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_2">
-                <item>
-                 <widget class="QLabel" name="label_3">
-                  <property name="text">
-                   <string>Gyro z = </string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="gyro_z_txt">
-                  <property name="text">
-                   <string>TextLabel</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_4">
-            <item>
-             <widget class="QLabel" name="label_2">
+             <widget class="QLabel" name="label_5">
               <property name="text">
-               <string>Accel x= </string>
+               <string>Gyro x = </string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_4">
+             <widget class="QLabel" name="txt_gyro_x">
               <property name="text">
                <string>TextLabel</string>
               </property>
@@ -126,16 +69,16 @@
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
-             <widget class="QLabel" name="label_6">
+             <widget class="QLabel" name="label">
               <property name="text">
-               <string>Accel y = </string>
+               <string>Gyro y = </string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_7">
+             <widget class="QLabel" name="txt_gyro_y">
               <property name="text">
                <string>TextLabel</string>
               </property>
@@ -144,16 +87,16 @@
            </layout>
           </item>
           <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
-             <widget class="QLabel" name="label_8">
+             <widget class="QLabel" name="label_3">
               <property name="text">
-               <string>Accel z = </string>
+               <string>Gyro z = </string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="label_9">
+             <widget class="QLabel" name="txt_gyro_z">
               <property name="text">
                <string>TextLabel</string>
               </property>
@@ -164,28 +107,236 @@
          </layout>
         </item>
        </layout>
-      </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Accel x= </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="txt_accel_x">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Accel y = </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="txt_accel_y">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Accel z = </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="txt_accel_z">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>345</width>
+      <height>119</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>BMP280</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>Атомсферное давлене (мм.рт.ст) = </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Температура (С) = </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Высота над уровнем моря (м) = </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </item>
-     <item>
-      <widget class="QGroupBox" name="Coord_gBox">
-       <property name="title">
-        <string>Coordinates</string>
-       </property>
-      </widget>
-     </item>
-     <item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="Coord_gBox">
+    <property name="geometry">
+     <rect>
+      <x>272</x>
+      <y>9</y>
+      <width>218</width>
+      <height>119</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Coordinates</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
       <layout class="QVBoxLayout" name="verticalLayout_4">
        <item>
-        <widget class="QGroupBox" name="groupBox_3">
-         <property name="title">
-          <string>GroupBox</string>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Ширина = </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="txt_width">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>Долгота =</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="txt_long">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Угол от севера = </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="txt_angle_north">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>534</x>
+      <y>9</y>
+      <width>195</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Высота по ЛД</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <widget class="QLabel" name="label_15">
+         <property name="text">
+          <string>Высота (см) = </string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QGroupBox" name="groupBox">
-         <property name="title">
-          <string>GroupBox</string>
+        <widget class="QLabel" name="label_17">
+         <property name="text">
+          <string>TextLabel</string>
          </property>
         </widget>
        </item>
