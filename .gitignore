@@ -1,6 +1,27 @@
 # This file is used to ignore files which are generated
 # ----------------------------------------------------------------------------
+# Папки сборки (Qt Creator часто создает их рядом с проектом)
+build/
+build-*/
+cmake-build-*/
 
+# Временные файлы Qt Creator
+*.user
+*.pro.user
+*.qmljs
+*.qmljsproject
+
+# Артефакты компиляции
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
 *~
 *.autosave
 *.a

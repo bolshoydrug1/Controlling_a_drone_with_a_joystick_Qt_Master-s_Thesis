@@ -1,4 +1,4 @@
-# Install script for directory: /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL
+# Install script for directory: /home/konstantin/Magister_work/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/joystick_CTRL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-18")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

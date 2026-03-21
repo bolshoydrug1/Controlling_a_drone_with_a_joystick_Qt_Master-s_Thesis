@@ -1,4 +1,4 @@
-# Install script for directory: /home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis
+# Install script for directory: /home/konstantin/Magister_work/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/llvm-objdump-18")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -49,22 +49,22 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Magister_work"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/Magister_work")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/konstantin/Magister_work/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/Magister_work")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Magister_work" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Magister_work")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Magister_work"
-         OLD_RPATH "/home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/joystick_CTRL:"
+         OLD_RPATH "/home/konstantin/Magister_work/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/joystick_CTRL:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/llvm-strip-18" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Magister_work")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/Magister_work")
     endif()
   endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/joystick_CTRL/cmake_install.cmake")
+  include("/home/konstantin/Magister_work/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/joystick_CTRL/cmake_install.cmake")
 
 endif()
 
@@ -76,5 +76,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/konstantin/Magister_work_QT/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/konstantin/Magister_work/Controlling_a_drone_with_a_joystick_Qt_Master-s_Thesis/build/Desktop-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
