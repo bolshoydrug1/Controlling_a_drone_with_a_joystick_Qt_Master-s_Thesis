@@ -2,6 +2,8 @@
 #include "./ui_mainwindow.h"
 #include <QMessageBox>
 #include <QJsonDocument>
+#include "f_select_ctrl.h"
+#include "ui_f_select_ctrl.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -78,3 +80,11 @@ void MainWindow::onCommandReady(const QString &commandType, const QVariantMap &d
     QJsonDocument doc = QJsonDocument::fromVariant(data);
     qDebug() << "📤 Команда:" << commandType << doc.toJson();
 }
+
+void MainWindow::on_pb_select_ctrl_clicked()
+{
+    F_select_ctrl* select_ctrl = new F_select_ctrl(nullptr);
+    select_ctrl->setAttribute(Qt::WA_DeleteOnClose);  // Удалить только при закрытии
+    select_ctrl->show();
+}
+

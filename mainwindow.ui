@@ -344,6 +344,19 @@
      </item>
     </layout>
    </widget>
+   <widget class="QPushButton" name="pb_select_ctrl">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>150</y>
+      <width>88</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Select CTRL</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

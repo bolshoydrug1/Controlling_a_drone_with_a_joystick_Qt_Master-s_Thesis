@@ -44,6 +44,7 @@ else()
     else()
         add_executable(Magister_work
             ${PROJECT_SOURCES}
+            f_select_ctrl.h f_select_ctrl.cpp f_select_ctrl.ui
 
 
         )
