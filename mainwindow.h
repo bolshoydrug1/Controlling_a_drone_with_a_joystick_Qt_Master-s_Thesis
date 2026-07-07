@@ -2,7 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QThread>
 #include "joystick_CTRL/joystick_ctrl.h"
+#include "f_select_ctrl.h"
+#include "ui_f_select_ctrl.h"
+#include "telemetry_receiver.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -26,8 +30,26 @@ private slots:
     void onButtonPressed(int button);
     void onCommandReady(const QString &commandType, const QVariantMap &data);
 
+    void on_pb_select_ctrl_clicked();
+
+    void on_pb_refresh_com_clicked();
+    void on_pb_connect_com_clicked();
+
+    void onTelemetryFrame(TelemetryFrame_t frame);
+    void onTelemetryConnected();
+    void onTelemetryDisconnected();
+    void onTelemetryError(const QString &message);
+
 private:
+    void populateComPorts();
+    void startTelemetryReceiver(const QString &portName, qint32 baudRate);
+    void stopTelemetryReceiver();
+
     Ui::MainWindow *ui;
+    Ui::F_select_ctrl* select_ctrl;
     JoystickController *m_joystick;
+
+    QThread *m_telemetryThread = nullptr;
+    TelemetryReceiver *m_telemetryReceiver = nullptr;
 };
 #endif // MAINWINDOW_H
